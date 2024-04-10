@@ -103,12 +103,12 @@ case ${CMD_NAME,,} in
             -v $WORKDIR:/work/ \
             -v $SRC:/src/ \
             -v $OUT:/out/ \
-            -e CC=$CC \
-            -e CXX=$CXX \
-            -e CCC=$CCC \
-            -e CFLAGS=$CFLAGS \
-            -e CXXFLAGS=$CXXFLAGS \
-            -e LIB_FUZZING_ENGINE=$LIB_FUZZING_ENGINE \
+            -e "CC=$CC" \
+            -e "CXX=$CXX" \
+            -e "CCC=$CCC" \
+            -e "CFLAGS=$CFLAGS" \
+            -e "CXXFLAGS=$CXXFLAGS" \
+            -e "LIB_FUZZING_ENGINE=$LIB_FUZZING_ENGINE" \
             -e "KERNEL_MAKE_CMD=$KERNEL_MAKE_CMD" \
             $CP_NAME:$CP_MOD_TAG sh -c "$SH_CMD"
 
@@ -133,12 +133,12 @@ case ${CMD_NAME,,} in
             -v $WORKDIR:/work/ \
             -v $SRC:/src/ \
             -v $OUT:/out/ \
-            -e CC=$CC \
-            -e CXX=$CXX \
-            -e CCC=$CCC \
-            -e CFLAGS=$CFLAGS \
-            -e CXXFLAGS=$CXXFLAGS \
-            -e LIB_FUZZING_ENGINE=$LIB_FUZZING_ENGINE \
+            -e "CC=$CC" \
+            -e "CXX=$CXX" \
+            -e "CCC=$CCC" \
+            -e "CFLAGS=$CFLAGS" \
+            -e "CXXFLAGS=$CXXFLAGS" \
+            -e "LIB_FUZZING_ENGINE=$LIB_FUZZING_ENGINE" \
             $CP_NAME:$CP_MOD_TAG ./run_internal.sh pov /work/tmp_blob /out/$HARNESS_ID
 
         rm $WORKDIR/tmp_blob
@@ -153,12 +153,12 @@ case ${CMD_NAME,,} in
             -v $WORKDIR:/work/ \
             -v $SRC:/src/ \
             -v $OUT:/out/ \
-            -e CC=$CC \
-            -e CXX=$CXX \
-            -e CCC=$CCC \
-            -e CFLAGS=$CFLAGS \
-            -e CXXFLAGS=$CXXFLAGS \
-            -e LIB_FUZZING_ENGINE=$LIB_FUZZING_ENGINE \
+            -e "CC=$CC" \
+            -e "CXX=$CXX" \
+            -e "CCC=$CCC" \
+            -e "CFLAGS=$CFLAGS" \
+            -e "CXXFLAGS=$CXXFLAGS" \
+            -e "LIB_FUZZING_ENGINE=$LIB_FUZZING_ENGINE" \
             $CP_NAME:$CP_MOD_TAG ./run_internal.sh run_tests
         ;;
     *)
